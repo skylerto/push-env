@@ -24,12 +24,16 @@ Default configuration filenames respectively are development.js, production.js, 
 
 ### Custom configuration filenames
 
-If you don't want to follow convention, set the environment configuration files
+If you don't want to follow convention, set the environment configuration files  
+
 ```javascript
 var pushenv = require('push-env')
-pushenv.set('dev', './environments/development.js')
-pushenv.set('prod', './environments/production.js')
-pushenv.set('test', './environments/production.js')
+pushenv.set('envdir', './environments/')
+
+// Configuration files must live in the above set envdir
+pushenv.set('dev', 'development.js')
+pushenv.set('prod', 'production.js')
+pushenv.set('test', 'production.js')
 ```
 
 
