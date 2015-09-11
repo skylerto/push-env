@@ -7,5 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Skyler Layne",
-  "license": "ISC"
+  "bugs": {
+    "url": "https://github.com/skylerto/push-env/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skylerto/push-env.git"
+  },
 }
