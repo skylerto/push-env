@@ -4,11 +4,18 @@
 
 Middleware to help manage node environments.  
 
+## Installation
+
+```UNIX
+$ npm install push-env --save
+```
+
 ## Usage  
 
 Set the folder where the environment configurations live  
-``` javascript
-push-env.set('envdir', './environments/')
+```javascript
+var pushenv = require('push-env')
+pushenv.set('envdir', './environments/')
 ```
 
 
