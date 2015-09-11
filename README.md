@@ -31,9 +31,9 @@ var pushenv = require('push-env')
 pushenv.set('envdir', './environments/')
 
 // Configuration files must live in the above set envdir
-pushenv.set('dev', 'development.js')
-pushenv.set('prod', 'production.js')
-pushenv.set('test', 'production.js')
+pushenv.set('development', 'development.js')
+pushenv.set('production', 'production.js')
+pushenv.set('testing', 'production.js')
 ```
 
 

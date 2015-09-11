@@ -1,4 +1,4 @@
-var envdir;
+var envdir, development, production, testing;
 set('envdir', 'env');
 
 /*
@@ -30,7 +30,16 @@ function set(key, value){
     case 'envdir':
       envdir = './' + value;
       break;
+    case 'development':
+      development = value;
+      break;
+    case 'production':
+      production = value;
+      break;
+    case 'testing':
+      testing = value;
+      break;
     default:
-      // envdir = '.';
+      break;
   }
 }
